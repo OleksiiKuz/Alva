@@ -1,0 +1,52 @@
+.sale {
+}
+
+.sale__section {
+  margin-bottom: 95px;
+}
+.sale__wrapper {
+  font-style: normal;
+  font-weight: normal;
+}
+.sale__promo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sale__promo-hash {
+  display: flex;
+  justify-content: center;
+}
+.hash__item {
+  font-size: 18px;
+  line-height: 21px;
+  color: #939191;
+  margin: 0 43px 34px 0;
+}
+.sale__promo-text {
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #333333;
+  max-width: 850px;
+  margin: auto;
+  margin-bottom: 34px;
+}
+.button {
+  background: #333333;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+.sale__promo-button {
+  padding: 15px 50px;
+  min-width: 181px;
+  min-height: 46px;
+  display: block;
+  margin: auto;
+}
