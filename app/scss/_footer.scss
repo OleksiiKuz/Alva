@@ -19,13 +19,20 @@
 }
 .footer__navigation-item {
   margin-right: 40px;
+
+ 
 }
 .footer__navigation-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-
+  transition: .2s linear;
   color: #777777;
+
+   &:hover {
+    color: #000000;
+    font-weight: 500;
+  }
 }
 .footer__social {
   display: flex;
@@ -41,6 +48,15 @@
   justify-content: space-between;
 }
 .footer__privacy {
+  font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #777777;
+}
+
+.footer__privacy--bold {
+  font-weight: 600;
 }
 .footer__pay {
   display: flex;

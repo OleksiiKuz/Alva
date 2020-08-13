@@ -20,10 +20,72 @@
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item"> <a class="header__menu-link" href="#">home</a></li>
-            <li class="header__menu-item"> <a class="header__menu-link" href="#">shop</a></li>
-            <li class="header__menu-item"> <a class="header__menu-link" href="#">product</a></li>
-            <li class="header__menu-item"> <a class="header__menu-link" href="#">blog</a></li>
-            <li class="header__menu-item"> <a class="header__menu-link" href="#">pages</a></li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">shop<span class="header__arrow"><img src="./img/arrow_down.svg" alt=""></span></a>
+              <ul class="subheader__menu-list">
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some shop position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some shop position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some shop position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some shop position</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+               <a class="header__menu-link" href="#">product<span class="header__arrow"><img src="./img/arrow_down.svg" alt=""></span></a>
+              <ul class="subheader__menu-list">
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some product position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some product position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some product position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some product position</a>
+                </li>
+              </ul>
+              </li>
+            <li class="header__menu-item"> <a class="header__menu-link" href="#">blog<span class="header__arrow"><img src="./img/arrow_down.svg" alt=""></span></a>
+              <ul class="subheader__menu-list">
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some blog position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some blog position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some blog position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some blog position</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item"> <a class="header__menu-link" href="#">pages<span class="header__arrow"><img src="./img/arrow_down.svg" alt=""></span></a>
+              <ul class="subheader__menu-list">
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some pages position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some pages position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some pages position</a>
+                </li>
+                <li class="subheader__menu-item">
+                  <a href="" class="subheader__menu-link">some pages position</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <div class="header__user">
@@ -73,15 +135,15 @@
                             </div>
                           </div>
 
-                                        <div class="promo__slider-item">
-                                          <div class="slider__cont " style="background-image: url('./img/promo__img.jpg')">
-                                            <div class="promo__slider-wrapper">
-                                              <div class="promo__slider-subtitle">accessories</div>
-                                              <h1 class="promo__slider-title">Bottle Grinder, Grinder Botle</h1>
-                                              <button class="button promo__slider-button">SHOP NOW</button>
-                                            </div>
-                                          </div>
-                                        </div>
+                          <div class="promo__slider-item">
+                            <div class="slider__cont " style="background-image: url('./img/promo__img.jpg')">
+                              <div class="promo__slider-wrapper">
+                                <div class="promo__slider-subtitle">accessories</div>
+                                <h1 class="promo__slider-title">Bottle Grinder, Grinder Botle</h1>
+                                <button class="button promo__slider-button">SHOP NOW</button>
+                              </div>
+                            </div>
+                          </div>
       </div>               
     </section>
 
@@ -95,17 +157,11 @@
           </div>
           <div class="shop__tabs-inner">
             <div class="shop__card">
-              <a class="shop__card-img" href="#">
-                <img src="./img/ottoman.jpg" alt="ottoman" />
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/ottoman.jpg" alt="ottoman" />
                 <div class="sale__icons">
-                  <div class="sale__icon--big__sale ">
-                    <div class="sale__icon-text">BIG SALE</div>
-                    </div>
-                  <div class="sale__icon--price">
-                    <div class="sale__icon-text">-15%</div>
-                    </div>
-                  <div class="sale__icon sale__icon--active">
-                    <div class="sale__icon-text ">Sale</div>
+                  <div class="sale__icon sale__icon-mega ">
+                   BIG SALE
                     </div>
                 </div>
                
@@ -158,7 +214,11 @@
                 </div>
               </a>
               <a href="#" class="shop__card-info">
+                <div class="name__block">
                 <div class="shop__card-name">Name 1</div>
+                <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+
                 <div class="shop__card-price">
                   100 $<span class="last__price">100 $</span>
                 </div>
@@ -166,17 +226,11 @@
             </div>
 
             <div class="shop__card">
-              <a class="shop__card-img" href="#">
-                <img src="./img/ottoman.jpg" alt="ottoman" />
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/cup.jpg" alt="ottoman" />
                 <div class="sale__icons">
-                  <div class="sale__icon--big__sale ">
-                    <div class="sale__icon-text">BIG SALE</div>
-                  </div>
-                  <div class="sale__icon--price">
-                    <div class="sale__icon-text">-15%</div>
-                  </div>
-                  <div class="sale__icon sale__icon--active">
-                    <div class="sale__icon-text ">Sale</div>
+                  <div class="sale__icon sale__icon-price">
+                    -15%
                   </div>
                 </div>
             
@@ -217,7 +271,10 @@
                 </div>
               </a>
               <a href="#" class="shop__card-info">
-                <div class="shop__card-name">Name Sooooooooome long, very looong name</div>
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
                 <div class="shop__card-price">
                   100 $<span class="last__price">100 $</span>
                 </div>
@@ -226,17 +283,11 @@
 
 
             <div class="shop__card">
-              <a class="shop__card-img" href="#">
-                <img src="./img/ottoman.jpg" alt="ottoman" />
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/sofa.jpg" alt="ottoman" />
                 <div class="sale__icons">
-                  <div class="sale__icon--big__sale ">
-                    <div class="sale__icon-text">BIG SALE</div>
-                  </div>
-                  <div class="sale__icon--price">
-                    <div class="sale__icon-text">-15%</div>
-                  </div>
-                  <div class="sale__icon sale__icon--active">
-                    <div class="sale__icon-text ">Sale</div>
+                  <div class="sale__icon sale__icon-sale ">
+                    Sale
                   </div>
                 </div>
             
@@ -277,7 +328,10 @@
                 </div>
               </a>
               <a href="#" class="shop__card-info">
-                <div class="shop__card-name">Name 1</div>
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
                 <div class="shop__card-price">
                   100 $<span class="last__price">100 $</span>
                 </div>
@@ -286,17 +340,11 @@
 
 
             <div class="shop__card">
-              <a class="shop__card-img" href="#">
-                <img src="./img/ottoman.jpg" alt="ottoman" />
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/ottoman.jpg" alt="ottoman" />
                 <div class="sale__icons">
-                  <div class="sale__icon--big__sale ">
-                    <div class="sale__icon-text">BIG SALE</div>
-                  </div>
-                  <div class="sale__icon--price">
-                    <div class="sale__icon-text">-15%</div>
-                  </div>
-                  <div class="sale__icon sale__icon--active">
-                    <div class="sale__icon-text ">Sale</div>
+                  <div class=" sale__icon sale__icon-mega ">
+                   BIG SALE
                   </div>
                 </div>
             
@@ -337,7 +385,10 @@
                 </div>
               </a>
               <a href="#" class="shop__card-info">
-                <div class="shop__card-name">Name 1</div>
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
                 <div class="shop__card-price">
                   100 $<span class="last__price">100 $</span>
                 </div>
@@ -346,20 +397,13 @@
 
 
             <div class="shop__card">
-              <a class="shop__card-img" href="#">
-                <img src="./img/ottoman.jpg" alt="ottoman" />
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/cup.jpg" alt="ottoman" />
                 <div class="sale__icons">
-                  <div class="sale__icon--big__sale ">
-                    <div class="sale__icon-text">BIG SALE</div>
+                  <div class="sale__icon sale__icon-price">
+                   -15%
                   </div>
-                  <div class="sale__icon--price">
-                    <div class="sale__icon-text">-15%</div>
-                  </div>
-                  <div class="sale__icon sale__icon--active">
-                    <div class="sale__icon-text ">Sale</div>
-                  </div>
-                </div>
-            
+                </div>           
                 <div class="shop__card-navigation">
                   <div class="navigation__product">
                     <div class="navigation__product-item">
@@ -397,7 +441,10 @@
                 </div>
               </a>
               <a href="#" class="shop__card-info">
-                <div class="shop__card-name">Name 1</div>
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
                 <div class="shop__card-price">
                   100 $<span class="last__price">100 $</span>
                 </div>
@@ -406,20 +453,13 @@
 
 
             <div class="shop__card">
-              <a class="shop__card-img" href="#">
-                <img src="./img/ottoman.jpg" alt="ottoman" />
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/sofa.jpg" alt="ottoman" />
                 <div class="sale__icons">
-                  <div class="sale__icon--big__sale ">
-                    <div class="sale__icon-text">BIG SALE</div>
-                  </div>
-                  <div class="sale__icon--price">
-                    <div class="sale__icon-text">-15%</div>
-                  </div>
-                  <div class="sale__icon sale__icon--active">
-                    <div class="sale__icon-text ">Sale</div>
+                  <div class="sale__icon sale__icon-sale">
+                    Sale
                   </div>
                 </div>
-            
                 <div class="shop__card-navigation">
                   <div class="navigation__product">
                     <div class="navigation__product-item">
@@ -457,14 +497,699 @@
                 </div>
               </a>
               <a href="#" class="shop__card-info">
-                <div class="shop__card-name">Name 1</div>
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div> 
+          </div>
+
+          <div class="shop__tabs-inner">
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/sofa.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-mega ">
+                    BIG SALE
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
                 <div class="shop__card-price">
                   100 $<span class="last__price">100 $</span>
                 </div>
               </a>
             </div>
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/ottoman.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-price">
+                    -15%
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/cup.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-sale ">
+                    Sale
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/sofa.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class=" sale__icon sale__icon-mega ">
+                    BIG SALE
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/ottoman.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-price">
+                    -15%
+                  </div>
+                </div>
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/cup.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-sale">
+                    Sale
+                  </div>
+                </div>
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          </div>
 
-            
+
+          <div class="shop__tabs-inner">
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/sofa.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-mega ">
+                    BIG SALE
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/cup.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-price">
+                    -15%
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/ottoman.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-sale ">
+                    Sale
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/sofa.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class=" sale__icon sale__icon-mega ">
+                    BIG SALE
+                  </div>
+                </div>
+          
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/cup.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-price">
+                    -15%
+                  </div>
+                </div>
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          
+          
+            <div class="shop__card">
+              <a class="shop__card-content" href="#">
+                <img class="shop__card-img" src="./img/ottoman.jpg" alt="ottoman" />
+                <div class="sale__icons">
+                  <div class="sale__icon sale__icon-sale">
+                    Sale
+                  </div>
+                </div>
+                <div class="shop__card-navigation">
+                  <div class="navigation__product">
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/search_card.svg" alt="search" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/arrow_card.svg" alt="next" />
+                    </div>
+                    <div class="navigation__product-item">
+                      <img class="navigation__product-icon" src="./img/favorite_card.svg" alt="favorite" />
+                    </div>
+                  </div>
+                  <div class="navigation__sticker">
+                    <div class="navigation__size">
+                      <div class="navigation__size-item">S</div>
+                      <div class="navigation__size-item">M</div>
+                      <div class="navigation__size-item">L</div>
+                      <div class="navigation__size-item">XL</div>
+                    </div>
+                    <div class="navigation__icon">
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                      <div class="navigation__icon-item">
+                        <img src="./img/card_icon.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="shop__card-info">
+                <div class="name__block">
+                  <div class="shop__card-name">Name 1</div>
+                  <div class="shop__card-name shop__card-name--hover">+ Add to card</div>
+                </div>
+                <div class="shop__card-price">
+                  100 $<span class="last__price">100 $</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="sale sale__section">
@@ -549,7 +1274,7 @@
         </nav>
         <div class="footer__bottom">
           <div class="footer__privacy">
-            © 2018 Commerce Factory. All Rights Reserved | (+00) 123 567990 |
+            © 2018 <span class="footer__privacy--bold">Commerce Factory</span>. All Rights Reserved | <span class="footer__privacy--bold">(+00) 123 567990</span>  |
             contact@alvacommerce.com
           </div>
           <div class="footer__pay">

@@ -40,8 +40,13 @@
   line-height: 16px;
   text-align: center;
   color: #ffffff;
-
+  transition: .2s linear;
   text-transform: uppercase;
+
+    &:hover {
+      color: #000000;
+      background:  #c4c4c4;
+    }
 }
 .sale__promo-button {
   padding: 15px 50px;
