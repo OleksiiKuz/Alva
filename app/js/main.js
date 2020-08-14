@@ -1,23 +1,44 @@
+$('.header__burger').on('click', function (e) {
+  e.preventDefault;
+  $(this).toggleClass('header__burger-active')
+
+});
+
+$('.header__burger').on('click', function (e) {
+  e.preventDefault;
+  $('.header__menu').slideToggle();
+
+});
+
+$('.header__burger').on('click', function (e) {
+  e.preventDefault;
+  $('.header__menu' && 'header__user').toggleClass('header__active')
+
+
+
+
+});
+
+
 $(".promo__slider").slick({
   centerMode: true,
-  centerPadding: "190px",
+  centerPadding: "320px",
   slidesToShow: 1,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1280,
       settings: {
+        centerMode: false,
         arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 3,
+        slidesToShow: 1,
+        dots: true,
       },
     },
     {
       breakpoint: 480,
       settings: {
         arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
+        centerMode: false,
         slidesToShow: 1,
       },
     },
@@ -60,3 +81,5 @@ tabsParent.addEventListener("click", (event) => {
     });
   }
 });
+
+

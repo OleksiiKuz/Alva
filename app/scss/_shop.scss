@@ -25,6 +25,10 @@
   cursor: pointer;
   color: #929292;
   transition: 0.2s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
   &:hover {
     color: #5f5f5f;
   }
@@ -49,21 +53,43 @@
 }
 .shop__card {
   position: relative;
-  margin-bottom: 124px;
+  margin-bottom: 59px;
   max-width: 370px;
   max-height: 565px;
+  overflow: hidden;
 
   &:hover {
     .shop__card-navigation {
-      display: flex;
+      opacity: 1;
+    }
+
+    .shop__card-img {
+      transform: scale(1.05);
+    }
+
+        .shop__card-name {
+      opacity: 0;
+    }
+
+    .shop__card-name--hover {
+      opacity: 1;
     }
   }
+
+}
+
+.shop__card-content {
+  display: block;
+  overflow: hidden;
 }
 .shop__card-img {
   width: 100%;
   height: 100%;
   display: block;
+  overflow: hidden;
   object-fit: cover;
+  transition: .5s ease-in-out;
+
 }
 
 .sale__icons {
@@ -116,12 +142,13 @@
   text-align: center;
 }
 .shop__card-navigation {
-  display: none;
+  transition: .5s ease-in-out;
+  opacity: 0;
 }
 .navigation__product {
   position: absolute;
   top: 17px;
-  left: 307px;
+  right: 20px;
 }
 .navigation__product-item {
   width: 36px;
@@ -149,7 +176,7 @@
   justify-content: center;
 
   position: absolute;
-  bottom: 22px;
+  bottom: 82px;
   left: 30px;
 }
 .navigation__size {
@@ -175,23 +202,16 @@
 
   font-size: 17px;
   line-height: 20px;
-
+  
   color: #000000;
    
 
-  &:hover {
-    .shop__card-name {
-      opacity: 0;
-    }
 
-    .shop__card-name--hover {
-      opacity: 1;
-    }
-  }
 }
 
 .name__block {
   position: relative;
+
 }
 .shop__card-name {
   font-weight: 500;

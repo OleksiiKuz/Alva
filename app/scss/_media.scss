@@ -1,0 +1,126 @@
+@media (max-width: 1680px) {
+  .slider__cont {
+    background-position: center;
+  }
+}
+@media (max-width: 1366px) {
+  .shop__wrapper {
+    max-width: 1210px;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 1280px) {
+  .slider__cont {
+    max-width: 100%;
+  }
+  .shop__tabs-inner {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1024px) {
+  .header__burger {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 70px;
+    width: 80%;
+    z-index: 5;
+    background-color: #ffffff;
+  }
+
+  .header__menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop__card-navigation {
+    opacity: 1;
+  }
+}
+@media (max-width: 800px) {
+  .footer__top {
+    flex-direction: column-reverse;
+    padding-top: 26px;
+  }
+
+  .footer__navigation-list {
+    justify-content: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer__bottom {
+    flex-direction: column-reverse;
+  }
+
+  .footer__privacy {
+    text-align: center;
+  }
+
+  .footer__pay {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .shop__section {
+    padding: 10px 0 0 0;
+  }
+}
+@media (max-width: 600px) {
+  .footer__navigation-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__navigation-item {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 533px) {
+  .shop__tabs-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop__header-item {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .shop__card {
+    max-width: 355px;
+  }
+
+  .shop__card {
+    margin-bottom: 20px;
+  }
+
+  .sale__promo-text {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .shop__card {
+    max-width: 300px;
+  }
+
+  .navigation__sticker {
+    max-width: 238px;
+  }
+
+  .navigation__product {
+    right: 10px;
+  }
+}
+@media (max-width: 320px) {
+}

@@ -20,7 +20,9 @@
 .footer__navigation-item {
   margin-right: 40px;
 
- 
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .footer__navigation-link {
   font-weight: 500;
@@ -42,6 +44,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .footer__bottom {
   display: flex;

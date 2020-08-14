@@ -1,6 +1,6 @@
 $(".promo__slider").slick({
   centerMode: true,
-  centerPadding: "190px",
+  centerPadding: "360px",
   slidesToShow: 1,
   responsive: [
     {

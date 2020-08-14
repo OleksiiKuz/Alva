@@ -14,6 +14,8 @@
 .header__logo-img {
 }
 .header__menu {
+  display: flex;
+  justify-content: space-around;
 }
 .header__menu-list {
   display: flex;
@@ -58,6 +60,10 @@
   }
 }
 
+.header__active {
+  display: block;
+}
+
 .header__arrow {
   display: inline-block;
   transition: .2s linear;
@@ -82,13 +88,13 @@
 
 .subheader__menu-list {
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 0;
   z-index: 2;
   min-width: 200px;
   padding: 20px 0 0 0 ;
- 
-  display: none;
+ display: none;
+
 }
 
 .subheader__menu-link {
@@ -109,6 +115,7 @@
 }
 .header__user-item {
   margin-right: 30px;
+  cursor: pointer;
 }
 .header__user-search {
 }
@@ -118,3 +125,61 @@
 }
 .header__user-basket {
 }
+
+
+
+.header__burger {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  display: none;
+}
+
+.header__burger span {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+}
+.header__burger span::before,
+.header__burger span::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  display: block;
+  transition: 0.2s;
+}
+
+.header__burger span::before {
+  transform: translateY(-5px);
+}
+
+.header__burger span::after {
+  transform: translateY(5px);
+}
+
+.header__burger-active span {
+  height: 0;
+}
+
+.header__burger-active span::before {
+  transform: rotate(45deg);
+}
+
+.header__burger-active span::after {
+  transform: rotate(-45deg);
+}
+
+
