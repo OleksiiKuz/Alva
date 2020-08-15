@@ -50,9 +50,9 @@
         width: 100%;
       }
 
-        .header__arrow {
-        transform: rotate(180deg);
-}
+//         .header__arrow {
+//         transform: rotate(180deg);
+// }
   }
 
 }
@@ -73,17 +73,29 @@
 }
 
 .header__arrow {
-  display: inline-block;
-  transition: .2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
   margin-left: 5px;
   position: absolute;
   top: 6px;
   right: -16px;
+  transition: .2s linear;
 }
 
-.header__arrow .active {
-   transform: rotate(180deg); 
+.active {
+  display: block;
+    margin-left: 5px;
+  position: absolute;
+  top: 6px;
+  right: -16px;
+  transition: .2s linear;
+  transform: rotate(180deg);
 }
+
+
 
 
 
