@@ -70,3 +70,23 @@ color: #777777;
 .footer__pay-item {
   margin-right: 10px;
 }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #000000;
+  width: 17px;
+  height: 17px;
+  transition: .2s linear;
+
+  &:hover {
+        fill: #777777;
+  }
+
+}
+
+.logo {
+  width: 268px;
+  height: 34px;
+}

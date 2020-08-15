@@ -1,9 +1,13 @@
+.header {
+  position: relative;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 6%;
 }
 
 .header__section {
@@ -16,6 +20,7 @@
 .header__menu {
   display: flex;
   justify-content: space-around;
+  width: 90%;
 }
 .header__menu-list {
   display: flex;
@@ -30,13 +35,15 @@
   transition: 2s linear;
 
     &:hover {
-      .subheader__menu-list {
+    .subheader__menu-list {
         display: block;
+        
       }
 
       .header__menu-link {
          color: #000000;
         font-weight: 500;
+
       }
 
       .header__menu-link:after {
@@ -45,10 +52,11 @@
 
         .header__arrow {
         transform: rotate(180deg);
+}
   }
 
-    }
 }
+
 
 .header__menu-link {
   color: #333333;
@@ -68,6 +76,13 @@
   display: inline-block;
   transition: .2s linear;
   margin-left: 5px;
+  position: absolute;
+  top: 6px;
+  right: -16px;
+}
+
+.header__arrow .active {
+   transform: rotate(180deg); 
 }
 
 
@@ -97,6 +112,10 @@
 
 }
 
+.subheader__menu-list--open {
+  display: block !important;
+}
+
 .subheader__menu-link {
     color: #333333;
   transition: 0.4s linear;
@@ -112,10 +131,15 @@
 }
 .header__user {
   display: flex;
+
 }
 .header__user-item {
   margin-right: 30px;
   cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .header__user-search {
 }
