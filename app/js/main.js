@@ -101,7 +101,7 @@ let isMobile = {
 let body = document.querySelector("body");
 if (isMobile.any()) {
   body.classList.add("touch");
-  let arrow = document.querySelectorAll(".arrow");
+  let arrow = document.querySelectorAll(".header__arrow");
   for (i = 0; i < arrow.length; i++) {
     let thisLink = arrow[i].previousElementSibling;
     let subMenu = arrow[i].nextElementSibling;
@@ -110,7 +110,7 @@ if (isMobile.any()) {
     thisLink.classList.add("parent");
     arrow[i].addEventListener("click", function () {
       subMenu.classList.toggle("subheader__menu-list--open");
-      thisArrow.classList.toggle("active");
+      thisArrow.classList.toggle("header__arrow--active");
     });
   }
 } else {

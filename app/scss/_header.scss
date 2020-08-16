@@ -31,6 +31,7 @@
   font-size: 15px;
   line-height: 18px;
   margin-right: 51px;
+
   position: relative;
   transition: 2s linear;
 
@@ -40,6 +41,8 @@
     }
 
     .header__menu-link {
+      display: block;
+      position: relative;
       color: #000000;
       font-weight: 500;
     }
@@ -57,7 +60,9 @@
 .header__menu-link {
   color: #333333;
   transition: 0.4s linear;
+  display: block;
   position: relative;
+
   &:hover {
     color: #000000;
     font-weight: 500;
@@ -96,14 +101,8 @@
   left: 8px;
 }
 
-.active {
-  display: block;
-  margin-left: 5px;
-  position: absolute;
-  top: 6px;
-  right: -16px;
-  transition: 0.2s linear;
-  transform: rotate(180deg);
+.header__arrow--active {
+  transform: rotate(-180deg);
 }
 
 .header__menu-link:after {
