@@ -1,26 +1,21 @@
+//BURGER - MENU
 
-
-
-
-$('.header__burger').on('click', function (e) {
+$(".header__burger").on("click", function (e) {
   e.preventDefault;
-  $(this).toggleClass('header__burger-active')
-
+  $(this).toggleClass("header__burger-active");
 });
 
-$('.header__burger').on('click', function (e) {
+$(".header__burger").on("click", function (e) {
   e.preventDefault;
-  $('.header__menu').slideToggle();
-
+  $(".header__menu").slideToggle();
 });
 
-$('.header__burger').on('click', function (e) {
+$(".header__burger").on("click", function (e) {
   e.preventDefault;
-  $('.header__menu' && 'header__user').toggleClass('header__active')
-
+  $(".header__menu" && "header__user").toggleClass("header__active");
 });
 
-
+// SLIDER
 $(".promo__slider").slick({
   centerMode: true,
   centerPadding: "320px",
@@ -35,25 +30,18 @@ $(".promo__slider").slick({
         dots: true,
       },
     },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: false,
-        slidesToShow: 1,
-      },
-    },
   ],
 });
 
+//TABS
 const tabs = document.querySelectorAll(".shop__header-item");
 const tabsContent = document.querySelectorAll(".shop__tabs-inner");
 const tabsParent = document.querySelector(".shop__tabs-header");
 
 function hideTabContent() {
   tabsContent.forEach((item) => {
-    item.classList.add('hide');
-    item.classList.remove('show', 'fade')
+    item.classList.add("hide");
+    item.classList.remove("show", "fade");
   });
 
   tabs.forEach((item) => {
@@ -62,8 +50,8 @@ function hideTabContent() {
 }
 
 function showTabContent(i = 0) {
-   tabsContent[i].classList.add('show', 'fade');
-   tabsContent[i].classList.remove('hide');
+  tabsContent[i].classList.add("show", "fade");
+  tabsContent[i].classList.remove("hide");
   tabs[i].classList.add("shop__header-item--active");
 }
 
@@ -83,34 +71,48 @@ tabsParent.addEventListener("click", (event) => {
   }
 });
 
-
+// NAVIGATION MENU
 let isMobile = {
-  Android: function () { return navigator.userAgent.match(/Android/i); },
-  BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); },
-  iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
-  Opera: function () { return navigator.userAgent.match(/Opera Mini/i); },
-  Windows: function () { return navigator.userAgent.match(/IEMobile/i); },
-  any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+    return (
+      isMobile.Android() ||
+      isMobile.BlackBerry() ||
+      isMobile.iOS() ||
+      isMobile.Opera() ||
+      isMobile.Windows()
+    );
+  },
 };
-let body = document.querySelector('body');
+let body = document.querySelector("body");
 if (isMobile.any()) {
-  body.classList.add('touch');
-  let arrow = document.querySelectorAll('.arrow');
+  body.classList.add("touch");
+  let arrow = document.querySelectorAll(".arrow");
   for (i = 0; i < arrow.length; i++) {
     let thisLink = arrow[i].previousElementSibling;
     let subMenu = arrow[i].nextElementSibling;
     let thisArrow = arrow[i];
 
-    thisLink.classList.add('parent');
-    arrow[i].addEventListener('click', function () {
-      subMenu.classList.toggle('subheader__menu-list--open');
-      thisArrow.classList.toggle('active');
+    thisLink.classList.add("parent");
+    arrow[i].addEventListener("click", function () {
+      subMenu.classList.toggle("subheader__menu-list--open");
+      thisArrow.classList.toggle("active");
     });
   }
 } else {
-  body.classList.add('mouse');
+  body.classList.add("mouse");
 }
-
-
-
-

@@ -34,29 +34,25 @@
   position: relative;
   transition: 2s linear;
 
-    &:hover {
+  &:hover {
     .subheader__menu-list {
-        display: block;
-        
-      }
+      display: block;
+    }
 
-      .header__menu-link {
-         color: #000000;
-        font-weight: 500;
+    .header__menu-link {
+      color: #000000;
+      font-weight: 500;
+    }
 
-      }
+    .header__menu-link:after {
+      width: 100%;
+    }
 
-      .header__menu-link:after {
-        width: 100%;
-      }
-
-//         .header__arrow {
-//         transform: rotate(180deg);
-// }
+    .header__arrow {
+      transform: rotate(180deg);
+    }
   }
-
 }
-
 
 .header__menu-link {
   color: #333333;
@@ -82,22 +78,33 @@
   position: absolute;
   top: 6px;
   right: -16px;
-  transition: .2s linear;
+  transition: 0.2s linear;
+}
+
+.header__counter {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #e86868;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  position: absolute;
+  top: -8px;
+  left: 8px;
 }
 
 .active {
   display: block;
-    margin-left: 5px;
+  margin-left: 5px;
   position: absolute;
   top: 6px;
   right: -16px;
-  transition: .2s linear;
+  transition: 0.2s linear;
   transform: rotate(180deg);
 }
-
-
-
-
 
 .header__menu-link:after {
   display: block;
@@ -119,9 +126,8 @@
   left: 0;
   z-index: 2;
   min-width: 200px;
-  padding: 20px 0 0 0 ;
- display: none;
-
+  padding: 20px 0 0 0;
+  display: none;
 }
 
 .subheader__menu-list--open {
@@ -129,12 +135,12 @@
 }
 
 .subheader__menu-link {
-    color: #333333;
+  color: #333333;
   transition: 0.4s linear;
   position: relative;
-   background-color: #fff;
-   display: block;
-   padding: 5px 10px ;
+  background-color: #fff;
+  display: block;
+  padding: 5px 10px;
 
   &:hover {
     color: #000000;
@@ -143,11 +149,11 @@
 }
 .header__user {
   display: flex;
-
 }
 .header__user-item {
   margin-right: 30px;
   cursor: pointer;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
@@ -163,7 +169,7 @@
 }
 
 
-
+// STYLE FOR HEADER - BURGER
 .header__burger {
   display: block;
   height: 50px;
@@ -171,6 +177,7 @@
   border-radius: 50%;
   position: relative;
   display: none;
+  outline: none;
 }
 
 .header__burger span {
@@ -217,5 +224,3 @@
 .header__burger-active span::after {
   transform: rotate(-45deg);
 }
-
-

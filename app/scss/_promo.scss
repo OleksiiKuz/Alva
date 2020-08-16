@@ -16,7 +16,6 @@
   display: flex;
   margin: 0 auto;
   position: relative;
-
 }
 
 .promo__slider-wrapper {
@@ -81,31 +80,30 @@
 .slick-dots {
   position: absolute;
   bottom: 0;
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 20px 0;
-	list-style-type: none;
-	
-		li {
-			margin: 0 5px;
-		}
-	
-		button {
-			display: block;
-			width: 16px;
-			height: 16px;
-			padding: 0;
-			
-			border: 2px solid #a8c3df;
-			border-radius: 100%;
-			background-color: transparent;
-			
-			text-indent: -9999px;
-		}
-	
-		li.slick-active button {
-			background-color: #ffffff;
-		}
-	
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+
+  li {
+    margin: 0 5px;
+  }
+
+  button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+
+    border: 2px solid #a8c3df;
+    border-radius: 100%;
+    background-color: transparent;
+
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    background-color: #ffffff;
+  }
 }

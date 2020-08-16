@@ -21,6 +21,7 @@
   line-height: 56px;
   margin-right: 50px;
   margin-bottom: 52px;
+  outline: none;
 
   cursor: pointer;
   color: #929292;
@@ -67,7 +68,7 @@
       transform: scale(1.05);
     }
 
-        .shop__card-name {
+    .shop__card-name {
       opacity: 0;
     }
 
@@ -75,7 +76,6 @@
       opacity: 1;
     }
   }
-
 }
 
 .shop__card-content {
@@ -88,8 +88,7 @@
   display: block;
   overflow: hidden;
   object-fit: cover;
-  transition: .5s ease-in-out;
-
+  transition: 0.5s ease-in-out;
 }
 
 .sale__icons {
@@ -142,7 +141,7 @@
   text-align: center;
 }
 .shop__card-navigation {
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   opacity: 0;
 }
 .navigation__product {
@@ -202,16 +201,12 @@
 
   font-size: 17px;
   line-height: 20px;
-  
+
   color: #000000;
-   
-
-
 }
 
 .name__block {
   position: relative;
-
 }
 .shop__card-name {
   font-weight: 500;
@@ -220,11 +215,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
 }
 
 .shop__card-name--hover {
-  color: #FF0000;
+  color: #ff0000;
   position: absolute;
   top: 0;
   left: 0;
@@ -241,5 +235,3 @@
   color: #939191;
   margin-left: 10px;
 }
-
-

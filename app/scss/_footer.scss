@@ -1,6 +1,5 @@
 .footer {
   background: #f8f8f8;
-  min-height: 268px;
 }
 .footer__wrapper {
   max-width: 1125px;
@@ -28,10 +27,10 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  transition: .2s linear;
+  transition: 0.2s linear;
   color: #777777;
 
-   &:hover {
+  &:hover {
     color: #000000;
     font-weight: 500;
   }
@@ -52,13 +51,14 @@
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 120px;
 }
 .footer__privacy {
   font-weight: 500;
-font-size: 14px;
-line-height: 16px;
+  font-size: 14px;
+  line-height: 16px;
 
-color: #777777;
+  color: #777777;
 }
 
 .footer__privacy--bold {
@@ -78,12 +78,11 @@ color: #777777;
   fill: #000000;
   width: 17px;
   height: 17px;
-  transition: .2s linear;
+  transition: 0.2s linear;
 
   &:hover {
-        fill: #777777;
+    fill: #777777;
   }
-
 }
 
 .logo {
